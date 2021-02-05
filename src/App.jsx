@@ -38,12 +38,12 @@ function App() {
       <div className={styles.container}>
         <div className={styles.content}>
           <h2>Vaše spokojenost je pro nás prioritou</h2>
-          <div className={styles.flex}>
-            <div className={styles.left}>
-
               <p>
                 Nabízíme vám řešení, díky kterým můžete pronajímat bez obav:
         </p>
+          <div className={styles.flex}>
+            <div className={styles.left}>
+
               <ul>
                 <li>Nastavte si vlastní <b>podmínky pronájmu.</b></li>
                 <li>
@@ -122,7 +122,9 @@ function App() {
             <p>
               Získejte jednoduše nové zákazníky díky naší platformě.<br/> Stačí se zaregistrovat a přidat svůj vůz do nabídky.
           </p>
-          <Button/>
+          <div className={styles.center}>
+            <Button/>
+            </div>
           </div>
 
           <div className={styles.right}>
@@ -133,6 +135,7 @@ function App() {
       </div>
 
       <div className={styles.howTo}>
+        <div className={styles.content}>
         <h2>Jak na to?</h2>
         <div className={styles.howToWrapper}>
           <div className={styles.box}>
@@ -148,7 +151,7 @@ function App() {
             <p>
 
               Registrace je jednoduchá a bezplatná.
-</p>
+            </p>
           </div>
           <div className={styles.box}>
             <div className={styles.order}>
@@ -195,6 +198,7 @@ function App() {
               O všech poptávkách budete informování prostřednictvím e-mailu. Nic vám neunikne.
 </p>
           </div>
+          </div> 
         </div>
       </div>
       <div className={styles.registrSection}>

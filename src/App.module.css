@@ -1,7 +1,13 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  min-width: 320px;
 }
+
+button {
+  outline: none;
+}
+
 
 h1, h4 {
   color : white;
@@ -26,6 +32,30 @@ h3 {
   margin: 0;
 }
 
+@media only screen and (max-width: 950px) {
+  h1, h4 {
+    color : white;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+  h1 span, h4 span {
+    color: #A3E7EA;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 42px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -39,9 +69,19 @@ li {
   padding-left: 80px;
   margin: 15px 0;
 }
-button {
-  outline: none;
+
+@media only screen and (max-width: 950px) {
+  ul {
+    margin-bottom: 30px;
+  }
+  li {
+    background-image: url('assets/li3.svg');
+    line-height: 30px;
+    padding-left: 40px;
+  }
 }
+
+
 
 .flex {
   display: flex;
@@ -56,6 +96,25 @@ button {
   display: flex;
   justify-content: center;
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .flex {
+    flex-wrap:wrap;
+  }
+  
+  .left {
+    width: 100%;
+  }
+  
+  .right {
+    width: 100%;
+  }
+}
+
 
 .ilust1 {
   width: 100%;
@@ -68,8 +127,42 @@ button {
 }
 
 .content {
-  max-width: 1160px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 50px;
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 0 20px;
+  }
+}
+
+.registrSection {
+  background-image: url("assets/bgdark2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 100px 0 80px;
+}
+
+.registrSection .left {
+  width:60%;
+  display:flex;
+  align-items: center;
+}
+.registrSection .right {
+  width: 40%;
+}
+
+@media only screen and (max-width: 950px) {
+  .registrSection {
+    padding: 50px 0 40px;
+  }
+  .registrSection .left {
+    width: 100%;
+  }
+  .registrSection .right {
+    width: 100%;
+  }
 }
 
 .registr {
@@ -95,22 +188,30 @@ button {
   background-repeat: no-repeat;
   background-position: center left;
 }
-
-.registrSection {
-  background-image: url("assets/bgdark.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding: 100px 0 80px;
+@media only screen and (max-width: 950px) {
+  .registr {
+    max-width: 425px;
+    padding: 30px 20px;
+  }
+  
+  .registr ul {
+    margin: 15px 0;
+  }
+  
+  .registr ul li {
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 40px;
+    background-image: url('assets/li2.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  .registr h3 {
+    text-align: center;
+  }
 }
 
-.registrSection .left {
-  width:60%;
-  display:flex;
-  align-items: center;
-}
-.registrSection .right {
-  width: 40%;
-}
+
 
 .number {
   color: #09B0B7;
@@ -125,6 +226,12 @@ button {
 .box p {
   color: #707070;
 }
+@media only screen and (max-width: 950px) {
+  .box p {
+    font-size: 14px;
+  }
+}
+
 
 .App-logo {
   height: 120px;
@@ -134,24 +241,46 @@ button {
 
 .header {
   color: white;
-  min-height: 60vh;
-  padding: 30px 50px 100px;
+  min-height: 690px;
+  padding: 30px 0px 100px;
   background-image: url("assets/Hero.png");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   font-size: 20px;
   font-weight: 600;
+  box-sizing: border-box;
 }
+
+
 .header button {
   margin-top: 20px;
 }
-.header h1 {
+/* .header h1 {
 
   line-height: 62px;
-}
+} */
+
+
 .header .middle {
   margin-top: 100px;
+}
+@media only screen and (max-width: 950px) {
+  .header {
+    min-height: 490px;
+    padding: 30px 0px 60px;
+    background-position: bottom center;
+  }
 
+  .header button {
+    margin: 20px auto 0;
+  }
+  .header h1 {
+    text-align: center;
+  }
+  .header .middle {
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 
 .wrapper {
@@ -161,6 +290,11 @@ button {
 
 .box {
   width: 50%;
+}
+@media only screen and (max-width: 950px) {
+  .box {
+    width: 100%;
+  }
 }
 
 
@@ -173,15 +307,45 @@ button {
   background-position: top center;
 }
 
-.lightBlue h2 {
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
 .lightBlue p {
   line-height: 2;
   font-weight: 500;
   margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 950px) {
+  .lightBlue {
+    padding: 60px 0 20px;
+  }
+  .lightBlue h2{
+    text-align: center;
+  }
+  .lightBlue .left { 
+    flex-direction: column;   
+    justify-content: center;
+  }
+  .lightBlue .right img {
+    max-width: 250px;
+  }
+  .lightBlue button {
+    margin: 0 auto;
+  }
+  .lightBlue .right {
+    width: 100%;
+    padding: 30px 0;
+    order: 2;
+    justify-content: center;
+  }
+  .lightBlue p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align:center;
+  }
+}
+
+.lightBlue h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 
@@ -189,11 +353,16 @@ button {
 .howTo {
   max-width: 1160px;
   margin: 0 auto;
-  padding:0 0 110px ;
+  padding: 0 0 110px ;
 }
 
 .howToWrapper {
   display: flex;
+}
+@media only screen and (max-width: 950px) {
+  .howToWrapper {
+    flex-wrap: wrap;
+  }
 }
 
 .order {
@@ -205,8 +374,21 @@ button {
 
 .howToWrapper .box {
   width: 25%;
-  padding:0 20px;
+  padding: 0 20px;
 }
+@media only screen and (max-width: 950px) {
+  .howToWrapper .box {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .howTo h2 {
+    text-align: center;
+  }
+}
+
 .howToWrapper .box img{
   height: auto;
   margin-bottom: 15px;
@@ -231,6 +413,11 @@ button {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 950px) {
+  .howToWrapper .Title {
+    min-height: 50px;
+  }
+}
 
 
 .box {
@@ -241,11 +428,21 @@ button {
   padding-bottom: 60px;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 950px) {
+  .box {
+    margin-bottom: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top:20px;
+    box-sizing: border-box;
+  }
+}
 
 .Wrapper .box img{
   height: auto;
   margin-bottom: 15px;
 }
+
 
 .spolupraceImage {
   min-height: 106px;
@@ -261,4 +458,28 @@ button {
 }
 .spoluprace4 {
   width: 192px;
+}
+
+
+.container .left {
+  order:1;
+}
+.container .right {
+  order:2;
+}
+
+@media only screen and (max-width: 950px) {
+  .container .left {
+    order: 2;
+  }
+  .container .right {
+    order: 1;
+    display: flex;
+    justify-content: left;
+  }
+  .container .right img{
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+  }
 }
